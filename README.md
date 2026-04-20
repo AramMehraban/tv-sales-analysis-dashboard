@@ -1,6 +1,6 @@
-# 📊 Sales Data Analysis Dashboard
+# Sales Data Analysis Dashboard
 
-## 🎯 Project Overview
+## Project Overview
 This project is an end-to-end data analysis solution that explores the relationship between advertising spending and product sales.  
 It includes data cleaning, statistical analysis, visualization, and an interactive dashboard built with Python.
 
@@ -8,7 +8,7 @@ The goal is to demonstrate practical data analysis skills suitable for a Junior 
 
 
 
-## 🧰 Tools & Technologies
+## Tools & Technologies
 - Python
 - Pandas
 - NumPy
@@ -19,7 +19,7 @@ The goal is to demonstrate practical data analysis skills suitable for a Junior 
 
 
 
-## 📁 Project Structure
+## Project Structure
 ```
 sales-analysis-project/
 │
@@ -45,19 +45,19 @@ sales-analysis-project/
 ```
 
 
-## 📊 Key Features
+## Key Features
 
-### 📌 1. Data Analysis
+### 1. Data Analysis
 - Descriptive statistics
 - Correlation analysis
 - Distribution analysis
 
-### 📌 2. Data Visualization
+### 2. Data Visualization
 - Scatter plots (TV vs Sales)
 - Correlation heatmap
 - Sales distribution charts
 
-### 📌 3. Interactive Dashboard
+### 3. Interactive Dashboard
 Built with Streamlit:
 - KPI metrics (Total Sales, Average Sales, Max Sales)
 - Interactive filters (Sales range slider)
@@ -65,14 +65,14 @@ Built with Streamlit:
 
 
 
-## 📈 Key Insights
+## Key Insights
 - TV advertising shows the strongest correlation with sales
 - Sales distribution is slightly skewed
 - Higher advertising spend generally leads to higher sales
 
 
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### 1. Clone the repository
 ```bash
@@ -86,24 +86,20 @@ python -m venv venv
 venv\Scripts\activate   # Windows
 ```
 
-
 ### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
 
 ### 4. Run analysis
 ```bash
 python src/main.py
 ```
 
-
 ### 5. Run dashboard
 ```bash
 streamlit run dashboard/app.py
 ```
-
 
 # 📊 Dashboard Preview
 
@@ -114,7 +110,7 @@ streamlit run dashboard/app.py
 - Dynamic filtering system
 
 
-# 💼 Skills Demonstrated
+# Skills Demonstrated
 - Data cleaning & preprocessing
 - Statistical analysis (correlation, distribution)
 - Data visualization
@@ -122,21 +118,17 @@ streamlit run dashboard/app.py
 - Python automation
 
 
-# 📌 Future Improvements
+# Future Improvements
 - Machine Learning regression model for sales prediction
 - Deployment on Streamlit Cloud
 - Integration with real-time data sources
 
-
-# 👤 Author
-
-## 👤 Author
+##  Author
 
 **Created by:** Aram Mehraban  
 **Role:** Junior Data Analyst  
 **Focus:** Python, Data Analysis, Power BI, Business Intelligence
 
-
-# 📜 License
+# License
 
 This project is for educational and portfolio purposes
