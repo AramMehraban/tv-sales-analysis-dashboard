@@ -113,9 +113,9 @@ This project was developed as part of a personal data analytics portfolio to dem
 
 ## Author
 
-Created by: Aram Mehraban
-Role: Junior Data Analyst
-Focus: Python, Data Analysis, Power BI, Business Intelligence
+**Created by**: Aram Mehraban
+**Role**: Junior Data Analyst
+**Focus**: Python, Data Analysis, Power BI, Business Intelligence
 
 ## License
 
