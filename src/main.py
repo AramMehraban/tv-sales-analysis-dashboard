@@ -22,6 +22,7 @@ plt.close()
 # -------------------
 # Scatter Plot
 # -------------------
+
 plt.figure()
 sns.scatterplot(x="TV", y="Sales", data=df)
 plt.title("TV vs Sales")

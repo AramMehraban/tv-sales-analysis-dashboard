@@ -3,11 +3,14 @@ import pandas as pd
 import plotly.express as px
 
 # -------------------------
-# Load Data
+# PAGE CONFIG (must be first)
+# -------------------------
+st.set_page_config(page_title="Sales Dashboard", layout="wide")
+
+# -------------------------
+# LOAD DATA
 # -------------------------
 df = pd.read_csv("data/advertising.csv")
-
-st.set_page_config(page_title="Sales Dashboard", layout="wide")
 
 # -------------------------
 # SIDEBAR FILTERS
@@ -34,6 +37,8 @@ df_filtered = df[
 # -------------------------
 st.title("Sales Analytics Dashboard (Power BI Style)")
 
+st.markdown("---")
+
 # -------------------------
 # KPIs
 # -------------------------
@@ -42,6 +47,8 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Total Sales", round(df_filtered["Sales"].sum(), 2))
 col2.metric("Average Sales", round(df_filtered["Sales"].mean(), 2))
 col3.metric("Max Sales", round(df_filtered["Sales"].max(), 2))
+
+st.markdown("---")
 
 # -------------------------
 # CHART 1 - Scatter
@@ -54,7 +61,7 @@ fig1 = px.scatter(
     y="Sales",
     color="Sales",
     size="Sales",
-    title="TV vs Sales Relationship"
+    template="plotly_white"
 )
 
 st.plotly_chart(fig1, use_container_width=True)
@@ -68,23 +75,28 @@ fig2 = px.bar(
     df_filtered,
     x=df_filtered.index,
     y="Sales",
-    title="Sales per Observation"
+    template="plotly_white"
 )
 
 st.plotly_chart(fig2, use_container_width=True)
 
 # -------------------------
-# CHART 3 - Correlation Heatmap
+# CHART 3 - CORRELATION HEATMAP (FIXED)
 # -------------------------
 st.subheader("Correlation Matrix")
 
-corr = df_filtered.corr()
+corr = df_filtered.corr(numeric_only=True)
 
 fig3 = px.imshow(
     corr,
     text_auto=True,
+    aspect="auto",         
     color_continuous_scale="RdBu_r",
-    title="Correlation Heatmap"
+)
+
+fig3.update_layout(
+    width=900,
+    height=600              
 )
 
 st.plotly_chart(fig3, use_container_width=True)

@@ -1,10 +1,18 @@
 # Sales Data Analysis Dashboard
 
 ## Project Overview
-This project is an end-to-end data analysis solution that explores the relationship between advertising spending and product sales.  
-It includes data cleaning, statistical analysis, visualization, and an interactive dashboard built with Python.
 
-The goal is to demonstrate practical data analysis skills suitable for a Junior Data Analyst role.
+This project is an end-to-end data analysis solution that explores the relationship between advertising spend and product sales.
+
+It includes:
+
+- Data cleaning
+- Exploratory data analysis (EDA)
+- Statistical analysis
+- Data visualization
+- Interactive dashboard built with Streamlit
+
+* The goal is to demonstrate practical data analysis skills suitable for a Junior Data Analyst role.
 
 
 ## Project Goal
@@ -26,11 +34,19 @@ This project simulates a real-world business scenario and demonstrates how data-
 sales-analysis-project/
 │
 ├── data/
+       └── advertising.csv
 ├── dashboard/
+│       └── app.py
 ├── src/
-├── reports/
+│       └── main.py
+│       └── reports_generator.py
+│       └── reports/
+│           └── final_report.pdf
+│           └── heatmap.png
+│           └── scatter.png
 ├── requirements.txt
 ├── .gitignore
+├── setup.bat
 └── README.md
 ```
 
@@ -46,7 +62,7 @@ sales-analysis-project/
 - Correlation heatmap
 - Sales distribution charts
 
-### 3. Interactive Dashboard
+### 3. Interactive Dashboard (Streamlit)
 ### Built with Streamlit:
 - KPI metrics (Total Sales, Average Sales, Max Sales)
 - Interactive filters (Sales range slider)
@@ -65,32 +81,28 @@ git clone https://github.com/AramMehraban/tv-sales-analysis-dashboard.git
 cd tv-sales-analysis-dashboard
 ```
 
-### 2. Create environment
+### 2. One-click setup (recommended)
+```bash
+setup.bat
+```
+
+### 3. Manual setup (alternative)
 ```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
-```
-
-### 3. Install dependencies
-```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run analysis
+### 4. Run dashboard
 ```bash
-python src/main.py
-```
-
-### 5. Run dashboard
-```bash
-streamlit run dashboard/app.py
+python -m streamlit run dashboard/app.py
 ```
 
 # Dashboard Preview
 
 The dashboard includes:
 
-- Interactive KPI cards
+- KPI cards
 - Scatter plot visualization
 - Correlation heatmap
 - Dynamic filtering system
@@ -116,7 +128,7 @@ This project was developed as part of a personal data analytics portfolio to dem
 
 **Created by:** Aram Mehraban  
 **Role:** Junior Data Analyst  
-**Focus:** Python, Data Analysis, Power BI, Business Intelligence
+**Focus:** Python, Data Analysis, Business Intelligence
 
 
 ## License
