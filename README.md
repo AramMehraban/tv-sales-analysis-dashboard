@@ -111,11 +111,13 @@ The dashboard includes:
 
 This project was developed as part of a personal data analytics portfolio to demonstrate practical skills in Python and data visualization.
 
+
 ## Author
 
-**Created by**: Aram Mehraban
-**Role**: Junior Data Analyst
-**Focus**: Python, Data Analysis, Power BI, Business Intelligence
+**Created by:** Aram Mehraban  
+**Role:** Junior Data Analyst  
+**Focus:** Python, Data Analysis, Power BI, Business Intelligence
+
 
 ## License
 
