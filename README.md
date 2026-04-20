@@ -7,6 +7,9 @@ It includes data cleaning, statistical analysis, visualization, and an interacti
 The goal is to demonstrate practical data analysis skills suitable for a Junior Data Analyst role.
 
 
+## Project Goal
+This project simulates a real-world business scenario and demonstrates how data-driven insights can support marketing and sales decisions.
+
 
 ## Tools & Technologies
 - Python
@@ -18,32 +21,18 @@ The goal is to demonstrate practical data analysis skills suitable for a Junior 
 - Matplotlib
 
 
-
 ## Project Structure
 ```
 sales-analysis-project/
 │
 ├── data/
-│ └── advertising.csv
-│
 ├── dashboard/
-│ └── app.py
-│
 ├── src/
-│ ├── main.py
-│ └── report_generator.py
-│
 ├── reports/
-│ ├── scatter.png
-│ ├── heatmap.png
-│ └── final_report.pdf
-│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
 ```
-
 
 ## Key Features
 
@@ -58,29 +47,25 @@ sales-analysis-project/
 - Sales distribution charts
 
 ### 3. Interactive Dashboard
-Built with Streamlit:
+### Built with Streamlit:
 - KPI metrics (Total Sales, Average Sales, Max Sales)
 - Interactive filters (Sales range slider)
 - Dynamic visualizations
-
-
 
 ## Key Insights
 - TV advertising shows the strongest correlation with sales
 - Sales distribution is slightly skewed
 - Higher advertising spend generally leads to higher sales
 
+## How to Run
 
-
-## How to Run the Project
-
-### 1. Clone the repository
+### 1. Clone repository
 ```bash
-git clone https://github.com/AramMehraban/sales-analysis-project.git
-cd sales-analysis-project
+git clone https://github.com/AramMehraban/tv-sales-analysis-dashboard.git
+cd tv-sales-analysis-dashboard
 ```
 
-### 2. Create virtual environment
+### 2. Create environment
 ```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
@@ -101,34 +86,37 @@ python src/main.py
 streamlit run dashboard/app.py
 ```
 
-# 📊 Dashboard Preview
+# Dashboard Preview
 
-#### The dashboard includes:
+The dashboard includes:
+
 - Interactive KPI cards
 - Scatter plot visualization
 - Correlation heatmap
 - Dynamic filtering system
 
-
 # Skills Demonstrated
-- Data cleaning & preprocessing
-- Statistical analysis (correlation, distribution)
-- Data visualization
-- Dashboard development
-- Python automation
-
+- Data Analysis (Pandas, NumPy)
+- Data Visualization (Matplotlib, Seaborn, Plotly)
+- Dashboard Development (Streamlit)
+- Statistical Analysis (Correlation, Distribution)
+- Python Automation
 
 # Future Improvements
 - Machine Learning regression model for sales prediction
 - Deployment on Streamlit Cloud
 - Integration with real-time data sources
 
-##  Author
+# Note
 
-**Created by:** Aram Mehraban  
-**Role:** Junior Data Analyst  
-**Focus:** Python, Data Analysis, Power BI, Business Intelligence
+This project was developed as part of a personal data analytics portfolio to demonstrate practical skills in Python and data visualization.
 
-# License
+## Author
 
-This project is for educational and portfolio purposes
+Created by: Aram Mehraban
+Role: Junior Data Analyst
+Focus: Python, Data Analysis, Power BI, Business Intelligence
+
+## License
+
+This project is for educational and portfolio purposes.
